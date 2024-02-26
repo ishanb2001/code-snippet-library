@@ -1,0 +1,31 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Dark background */
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    transition: top 0.3s; /* Smooth transition for sliding */
+}
+
+.navbar.hidden {
+    top: -100%; /* Slide upwards */
+}
+
+.navbar.active {
+    top: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+a:hover {
+    color: #ddd;
+}

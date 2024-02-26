@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+
+import React from 'react';
+import Navbar from './Navbar'; // Adjust the path as necessary
+import Sidebar from './Sidebar';
+import './App.css'; // Assuming your styles will be here
+import {Code} from "@nextui-org/react";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Navbar />
+      <div className="content">
+        <Sidebar />
+        <main className="main-content">
+          {/* Main content goes here */}
+          <p>Main Content</p>
+          <Code>npm install @nextui-org/react</Code>
+        </main>
+      </div>
     </div>
   );
 }
